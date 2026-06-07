@@ -252,27 +252,30 @@ const showInfo = ref(false);
 }
 
 .info-modal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
+  padding: 20px;
 }
 
 .info-content {
   background: linear-gradient(135deg, #2a2a4a, #1a1a2e);
-  padding: 30px 40px;
+  padding: 25px 35px;
   border-radius: 16px;
-  max-width: 500px;
-  max-height: 80vh;
+  width: 100%;
+  max-width: 480px;
+  max-height: 100%;
   overflow-y: auto;
   text-align: left;
   color: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 .info-content h2 {

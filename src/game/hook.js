@@ -166,7 +166,7 @@ export class Hook {
 
     ctx.save();
     ctx.translate(hx, hy);
-    ctx.rotate(this.angle);
+    ctx.rotate(-this.angle);
 
     ctx.fillStyle = "#C0C0C0";
     ctx.strokeStyle = "#808080";
